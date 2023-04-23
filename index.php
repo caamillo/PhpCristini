@@ -1,7 +1,5 @@
 <?php
-require './include/db.php';
-$res = mysqli_query("SELECT * FROM Toscana");
-echo $res;
+echo "Bella";
 ?>
 <!DOCTYPE html>
 <html lang="it">
@@ -13,6 +11,5 @@ echo $res;
 </head>
 <body>
     This page works! 2
-    <?php phpinfo(); ?>
 </body>
 </html>
