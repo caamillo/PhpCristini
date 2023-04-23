@@ -1,8 +1,8 @@
 <?php
 // Basic connection settings
 $databaseHost = 'localhost';
-$databaseUsername = 'ubuntu';
-$databasePassword = '';
+$databaseUsername = 'caamillo';
+$databasePassword = 'caamillo';
 $databaseName = 'scuola';
 
 // Connect to the database

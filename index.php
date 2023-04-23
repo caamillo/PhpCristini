@@ -1,12 +1,7 @@
 <?php
-// Basic connection settings
-$databaseHost = 'localhost';
-$databaseUsername = 'caamillo';
-$databasePassword = 'caamillo';
-$databaseName = 'scuola';
-
-// Connect to the database
-$mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
+require './include/db.php';
+$res = mysql_query($mysqli, "SELECT * FROM Toscana");
+echo $res;
 ?>
 <!DOCTYPE html>
 <html lang="it">
