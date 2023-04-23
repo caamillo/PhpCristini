@@ -8,5 +8,6 @@
 </head>
 <body>
     This page works! 2
+    <?php phpinfo(); ?>
 </body>
 </html>
