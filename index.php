@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    This page works!
+    This page works! 2
 </body>
 </html>
