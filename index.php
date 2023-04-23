@@ -1,8 +1,3 @@
-<?php
-require './include/db.php';
-$q = "SELECT * FROM Toscana";
-$res = mysqli_query($mysqli, $q);
-?>
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -12,6 +7,7 @@ $res = mysqli_query($mysqli, $q);
     <title>Document</title>
 </head>
 <body>
-    This page works! 2
+    <table id="toscana"></table>
+    <script src="./script.js" type="text/javascript"></script>
 </body>
 </html>
