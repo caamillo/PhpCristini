@@ -1,5 +1,6 @@
 <?php
 require './include/db.php';
+echo $mysqli;
 ?>
 <!DOCTYPE html>
 <html lang="it">
