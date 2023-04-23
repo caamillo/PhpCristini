@@ -1,5 +1,10 @@
+<?php
+require './include/db.php';
+$res = mysqli_query("SELECT * FROM Toscana");
+echo $res;
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
