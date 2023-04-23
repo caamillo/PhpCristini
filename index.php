@@ -7,13 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body>
-    <div class="p-5 space-y-3">
+<body class="flex justify-center h-screen items-center bg-sky-600">
+    <div class="p-10 w-[900px] bg-white space-y-3 flex flex-col rounded-xl justify-center items-start">
         <div class="flex justify-start items-center space-x-5">
             <img src="lucca.png" class="w-[50px]" />
             <h1 class="text-[25px] font-bold">Istituzioni non profit della provincia di Lucca</h1>
         </div>
-        <h3 class="w-[50%] py-3">Dati primari: numero di istituzioni non profit attive e relativi addetti, lavoratori esterni e volontari, con sede legale in provincia di Lucca classificate per sezioni e divisioni ATECO 2007. Confronto fra censimenti Data di riferimento: 31 dicembre 2011. Fonte: ISTAT, Censimento delle Istituzioni Non Profit. Estrazione dei dati: a cura dell'Ufficio di Statistica della Provincia di Lucca, dalla banca dati i.stat. Eventuali errori sono a carico di chi ha effettuato l'estrazione e non devono essere imputati all'ISTAT. Dati aggiuntivi: variazioni nel numero di imprese, di addetti, di lavoratori esterni e di volontari Metadati e informazioni aggiuntive: a cura dell'Ufficio di Statistica della Provincia di Lucca.</h3>
+        <h3 class=" py-3">Dati primari: numero di istituzioni non profit attive e relativi addetti, lavoratori esterni e volontari, con sede legale in provincia di Lucca classificate per sezioni e divisioni ATECO 2007. Confronto fra censimenti Data di riferimento: 31 dicembre 2011. Fonte: ISTAT, Censimento delle Istituzioni Non Profit. Estrazione dei dati: a cura dell'Ufficio di Statistica della Provincia di Lucca, dalla banca dati i.stat. Eventuali errori sono a carico di chi ha effettuato l'estrazione e non devono essere imputati all'ISTAT. Dati aggiuntivi: variazioni nel numero di imprese, di addetti, di lavoratori esterni e di volontari Metadati e informazioni aggiuntive: a cura dell'Ufficio di Statistica della Provincia di Lucca.</h3>
         <button onClick="toggleTable()" class="px-4 py-3 transition-all hover:scale-95 hover:opacity-80 font-medium rounded-md bg-sky-600 text-white">Show Table</button>
     </div>
     <div id="blur" class="w-full h-full bg-[#00000030] duration-700 transition-all blur-off backdrop-blur-sm fixed top-0"></div>
