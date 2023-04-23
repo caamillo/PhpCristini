@@ -1,7 +1,5 @@
 <?php
 require './include/db.php';
-$res = mysql_query($mysqli, "SELECT * FROM Toscana");
-echo $res;
 ?>
 <!DOCTYPE html>
 <html lang="it">
