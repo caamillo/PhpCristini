@@ -1,0 +1,65 @@
+Buongiorno / Buonasera Prof,
+questa è una mini guida per avviare il progetto.
+
+Requisiti:
+- Web Server (Apache / Nginx)
+- Nodejs
+- Php ( >= 8.1 )
+
+In caso si usasse XAMPP:
+- Avviare servizio Apache e MySQL
+- Navigare su C:\xampp\htdocs
+- Eliminare il contenuto
+- Estrarre lo ZIP
+
+Altrimenti, estrarre semplicemente lo zip nella cartella pubblica (Es. /var/www/html/)
+N.B. Se usa NGINX puoi installare php8.1-fpm che ti installa php senza Apache
+
+Ora bisogna creare un Database chiamato "scuola",
+digitare le seguenti query (MariaDB):
+
+Query N.1:
+CREATE TABLE Toscana (
+    sezione VARCHAR(255),       codice VARCHAR(1),
+    istruzioni2001 INT,         istruzioni2011 INT,         variazioneIstruzioni INT,
+    addetti2001 INT,            addetti2011 INT,            variazioneAddetti INT,
+    lavoratoriEsterni2001 INT,  lavoratoriEsterni2011 INT,  variazioneLavoratoriEsterni INT,
+    volontari2001 INT,          volontari2011 INT,          variazioneVolontari INT
+);
+
+Query N.2:
+INSERT INTO Toscana
+    ("altre attività di servizi","S",675,799,124,278,279,1,138,229,91,9582,15241,5659),
+    ("attività artistiche, sportive, di intrattenimento e divertimento","R",816,1440,624,152,268,116,233,870,637,9685,22272,12587), 
+    ("attività dei servizi di alloggio e di ristorazione","I",3,0,-3,4,0,-4,0,0,0,24,0,-24),
+    ("attività finanziarie e assicurative","K",0,1,1,0,0,0,0,0,0,0,9,9),
+    ("attività professionali, scientifiche e tecniche","M",13,22,9,8,6,-2,7,17,10,78,410,332),
+    ("commercio all'ingrosso e al dettaglio riparazione di autoveicoli e motocicli","G",1,0,-1,0,0,0,0,0,0,26,0,-26),
+    ("fornitura di acqua reti fognarie, attività di gestione dei rifiuti e risanamento","E",0,1,1,0,0,0,0,0,0,0,0,0),
+    ("istruzione","P",32,83,51,119,609,490,63,110,47,311,542,231),
+    ("noleggio, agenzie di viaggio, servizi di supporto alle imprese","N",0,2,2,0,94,94,0,0,0,0,3,3),
+    ("sanità e assistenza sociale","Q",279,344,65,1699,2057,358,124,216,92,12298,12566,268),
+    ("servizi di informazione e comunicazione","J",1,0,-1,0,0,0,2,0,-2,1,0,-1),
+    ("trasporto e magazzinaggio","H",0,1,1,0,45,45,0,0,0,0,7,7);
+
+(Le seguenti informazioni sono state reperite da: https://dati.toscana.it/dataset/istituzioni_non_profit_della_provincia_di_lucca_confronto_fra_censimenti)
+
+Aprire un terminale dove abbiamo estratto il contenuto dello zip
+e digitare: "npm install"
+
+Una volta terminato digitare: "npm run tailwind"
+E dopo aver letto "Done in ...ms" chiudere il dialogo con CTRL + C (due volte)
+
+Ora il sito è visitabile su http://localhost
+In caso il CSS non si è caricato correttamente, aggiorni più volte la pagina,
+altrimenti in caso di blocco completo di connessione le consiglio di guardare il Firewall
+
+Le ricordo anche che il sito l'ho momentaneamente pubbilcato sulla mia VPS di Netsons
+al seguente indirizzo: http://81.28.10.137/
+Utilizzando Nginx, Php8.1 e Nodejs (LTS 18.16)
+
+L'unica lib che ho utilizzato è una che mi consente di facilitarmi il lavoro
+scrivendo CSS direttamente dalle classi HTML (Tailwind): https://tailwindcss.com/
+(Da notare che è completamente diversa da Bootstrap)
+
+- Matteo Camillo Ludovico

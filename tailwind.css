@@ -532,20 +532,12 @@ video {
   top: 50%;
 }
 
-.z-30 {
-  z-index: 30;
-}
-
 .z-20 {
   z-index: 20;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
+.z-30 {
+  z-index: 30;
 }
 
 .mr-3 {
@@ -556,8 +548,12 @@ video {
   margin-top: 2.5rem;
 }
 
-.block {
-  display: block;
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .inline {
