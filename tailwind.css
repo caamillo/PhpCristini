@@ -532,20 +532,12 @@ video {
   top: 50%;
 }
 
-.z-30 {
-  z-index: 30;
-}
-
 .z-20 {
   z-index: 20;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
+.z-30 {
+  z-index: 30;
 }
 
 .mr-3 {
@@ -556,8 +548,12 @@ video {
   margin-top: 2.5rem;
 }
 
-.block {
-  display: block;
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .inline {
@@ -658,6 +654,12 @@ video {
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
 .overflow-y-scroll {
   overflow-y: scroll;
 }
@@ -749,6 +751,66 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-\[\#000000\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-\[\#312f2f\] {
+  --tw-text-opacity: 1;
+  color: rgb(49 47 47 / var(--tw-text-opacity));
+}
+
+.text-\[\#5e5b5b\] {
+  --tw-text-opacity: 1;
+  color: rgb(94 91 91 / var(--tw-text-opacity));
+}
+
+.text-\[\#8d8a8a\] {
+  --tw-text-opacity: 1;
+  color: rgb(141 138 138 / var(--tw-text-opacity));
+}
+
+.text-\[\#bab7b7\] {
+  --tw-text-opacity: 1;
+  color: rgb(186 183 183 / var(--tw-text-opacity));
+}
+
+.text-\[\#9e9b9b\] {
+  --tw-text-opacity: 1;
+  color: rgb(158 155 155 / var(--tw-text-opacity));
+}
+
+.text-\[\#787575\] {
+  --tw-text-opacity: 1;
+  color: rgb(120 117 117 / var(--tw-text-opacity));
+}
+
+.text-\[\#8a8686\] {
+  --tw-text-opacity: 1;
+  color: rgb(138 134 134 / var(--tw-text-opacity));
 }
 
 .shadow-2xl {
